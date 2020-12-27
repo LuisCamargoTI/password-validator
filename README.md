@@ -17,6 +17,7 @@ An password validator API
 - 1ª Sair da pasta raiz do projeto, e depois executar o comando `docker build password-validator -t password-validator`
 - 2ª Depois disso, inicie o docker com `docker run -p 8080:8080 --network="host" password-validator`    
 - 3ª Abrir seu browser favorito e ir para esse endereço `localhost:8080/api/v1/password/AbTp9!fok`, (sendo o valor após a última / a senha a ser testada).
+
 Outra opção é importar o projeto em sua IDE favorita, exemplo com Intellij [Importing a Maven project in IntelliJ IDEA](https://vaadin.com/learn/tutorials/import-maven-project-intellij-idea)
 
 ##### Qual foi a abordagem para o desenvolvimento?
