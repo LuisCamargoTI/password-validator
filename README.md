@@ -12,6 +12,7 @@ An password validator API
 
 ##### Como executar os testes?
 - Ir para a raiz do projeto e executar o comando do maven `mvn test`
+![tests](https://uploaddeimagens.com.br/images/003/014/701/full/Screenshot_from_2020-12-27_16-54-27.png?1609098956)
 
 ##### Como executar essa API?
 - 1ª Sair da pasta raiz do projeto, depois e executar o comando `docker build password-validator -t password-validator`
