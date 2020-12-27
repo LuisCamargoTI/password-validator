@@ -24,7 +24,6 @@ Outra opção é importar o projeto em sua IDE favorita, exemplo com Intellij [I
 - Linguagem escolhida foi o Kotlin, uma linguagem altamente produtiva, e de uma sintaxe muito boa.
 - O design de arquitetura adotado foi o Clean Architecture para permitir uma melhor separação das responsabilidades das classes no projeto.
 - Um único Service com apenas um método público chamado _execute_ para executar todo o pipeline de validações da senha, e cada validação com seus métodos privados (padrão Transaction Script).
-![pipeline](https://uploaddeimagens.com.br/images/003/014/742/original/My_First_Board.jpg?1609101593)
 
 LCS (Luis Camargo de Sousa) email luiscamargoti@gmail.com
 
