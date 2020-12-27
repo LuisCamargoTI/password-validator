@@ -20,14 +20,21 @@ class ValidatePassword {
     }
 
     private fun checkIfIsEmpty(password: String) {
-        if (password.trim() == "") throw ValidatePasswordException("Password not be empty")
+        if (password.trim().isEmpty()) {
+            throw ValidatePasswordException("Password not be empty")
+        }
     }
 
     private fun haveAtLeastNineChars(password: String) = password.length >= 9
+
     private fun haveAtLeastOneDigit(password: String) = password.toCharArray().partition { it.isDigit() }.first.isNotEmpty()
+
     private fun haveOneAtLeastUpperCase(password: String) = password.contains(Regex("(?=.*[A-Z])"))
+
     private fun haveOneAtLeastLowerCase(password: String) = password.contains(Regex("(?=.*[a-z])"))
+
     private fun haveOneAtLeastSpecialChar(password: String) = password.contains(Regex("[!@#$%^&*()\\-+]"))
+
     private fun doNotHaveRepeatChar(password: String) : Boolean {
         for(i in password.indices) {
             val char: Char = password[i]
