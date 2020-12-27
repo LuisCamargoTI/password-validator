@@ -8,7 +8,7 @@ An password validator API
 **Cobertura de Teste:**
 `85% classes, 94% lines covered`
  
-`package passwordvalidator class 85%(6/7) method 94%(17/18) line 94%(32/34)`
+`package password validator class 85%(6/7) method 94%(17/18) line 94%(32/34)`
 
 ##### Como executar os testes?
 - Ir para a raiz do projeto e executar o comando do maven `mvn test`
