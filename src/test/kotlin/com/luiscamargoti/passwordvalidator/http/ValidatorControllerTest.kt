@@ -26,9 +26,7 @@ class ValidatorControllerTest {
 
     @Autowired
     private var wac: WebApplicationContext? = null
-
     private var mockMvc: MockMvc? = null
-
     private var objectMapper: ObjectMapper? = null
 
     @BeforeEach
@@ -41,80 +39,71 @@ class ValidatorControllerTest {
     @Test
     fun validatePasswordWithSuccessfully() {
         this.mockMvc!!.perform(get("$API_END_POINT/AbTp9!fok"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(true))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(true))
     }
 
     @Test
     fun validatePasswordWrongPath() {
         this.mockMvc!!.perform(get("$API_END_POINT/"))
-                .andDo(print())
-                .andExpect(status().isNotFound)
-
+            .andDo(print())
+            .andExpect(status().isNotFound)
     }
 
     @Test
     fun validatePasswordWithEmpty() {
         this.mockMvc!!.perform(get("$API_END_POINT/ "))
-                .andDo(print())
-                .andExpect(status().isBadRequest)
-                .andExpect(jsonPath("$.errorMessage").value("Password not be empty"))
-
+            .andDo(print())
+            .andExpect(status().isBadRequest)
+            .andExpect(jsonPath("$.errorMessage").value("Password not be empty"))
     }
 
     @Test
     fun validatePasswordWithTwoCharsRepeats() {
         this.mockMvc!!.perform(get("$API_END_POINT/aa"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 
     @Test
     fun validatePasswordWithTwoLetters() {
         this.mockMvc!!.perform(get("$API_END_POINT/ab"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 
     @Test
     fun validatePasswordWithThreeLettersRepeats() {
         this.mockMvc!!.perform(get("$API_END_POINT/AAAbbbCc"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 
     @Test
     fun validatePasswordWithTwoLettersLowerCaseRepeats() {
         this.mockMvc!!.perform(get("$API_END_POINT/AbTp9!foo"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 
     @Test
     fun validatePasswordWithTwoLettersUpperCaseRepeats() {
         this.mockMvc!!.perform(get("$API_END_POINT/AbTp9!foA"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 
     @Test
     fun validatePasswordWithSpace() {
         this.mockMvc!!.perform(get("$API_END_POINT/AbTp9 fok"))
-                .andDo(print())
-                .andExpect(status().isOk)
-                .andExpect(jsonPath("$").value(false))
-
+            .andDo(print())
+            .andExpect(status().isOk)
+            .andExpect(jsonPath("$").value(false))
     }
 }

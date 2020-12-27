@@ -1,4 +1,3 @@
 package com.luiscamargoti.passwordvalidator.http.json
 
-class ErrorResponse(var errorMessage: String?) {
-}
+class ErrorResponse(var errorMessage: String?)

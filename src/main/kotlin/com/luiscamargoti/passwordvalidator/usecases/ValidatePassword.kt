@@ -1,4 +1,4 @@
-package com.luiscamargoti.passwordvalidator
+package com.luiscamargoti.passwordvalidator.usecases
 
 import com.luiscamargoti.passwordvalidator.domain.exceptions.ValidatePasswordException
 import org.springframework.stereotype.Component

@@ -1,21 +1,14 @@
 package com.luiscamargoti.passwordvalidator.usecases
 
-import com.luiscamargoti.passwordvalidator.ValidatePassword
 import com.luiscamargoti.passwordvalidator.domain.exceptions.ValidatePasswordException
 import org.junit.jupiter.api.Assertions.assertThrows
-import org.junit.jupiter.api.BeforeEach
 import org.junit.jupiter.api.Test
 import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class ValidatePasswordTest {
 
-    private var validatePassword: ValidatePassword? = null
-
-    @BeforeEach
-    fun setUpTest() {
-        validatePassword = ValidatePassword()
-    }
+    private val validatePassword: ValidatePassword = ValidatePassword()
 
     @Test
     fun validatePasswordWithSuccessfully(){
@@ -64,5 +57,4 @@ class ValidatePasswordTest {
         val password = "AbTp9 fok"
         assert(!validatePassword!!.execute(password))
     }
-
 }
