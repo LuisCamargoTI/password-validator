@@ -3,7 +3,7 @@ An password validator API
 
 ##### Pré-requisitos
 - _docker_ para executar a aplicação https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/
-- _mvn_ and _jdk-8_ para executar os testes unitários e de integração https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/
+- _mvn_ and _jdk-11_ para executar os testes unitários e de integração https://linuxize.com/post/how-to-install-apache-maven-on-ubuntu-18-04/
 
 **Cobertura de Teste:**
 `85% classes, 94% lines covered`
