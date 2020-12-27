@@ -10,11 +10,11 @@ import org.springframework.web.bind.annotation.*
 class ValidatorController {
 
     @Autowired
-    lateinit var validatorPassword: ValidatePassword
+    lateinit var validatePassword: ValidatePassword
 
     @GetMapping("/{password}")
     @Throws(ValidatePasswordException::class)
-    fun passwordValidator(@PathVariable password: String) : Boolean {
-        return validatorPassword.execute(password)
+    fun validatePassword(@PathVariable password: String) : Boolean {
+        return validatePassword.execute(password)
     }
 }
