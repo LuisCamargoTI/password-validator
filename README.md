@@ -21,3 +21,5 @@ An password validator API
 ##### Qual foi a abordagem para o desenvolvimento?
 - O design de arquitetura adotado foi o Clean Architecture para permitir uma melhor separação das responsabilidades das classes no projeto.
 - Um Service apenas com um método público chamado _execute_ para rodar todo o pipe de validações da senha, e cada validação com seus métodos privados (padrão Transaction Script).
+
+LCS (Luis Camargo de Sousa) email luiscamargoti@gmail.com
