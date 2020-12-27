@@ -19,6 +19,7 @@ An password validator API
 - 3ª Abrir seu browser favorito e ir para esse endereço `localhost:8080/api/v1/password/AbTp9!fok`, (a senha a ser testada ficará após a última barra da URL).
 
 ##### Qual foi a abordagem para o desenvolvimento?
+- Linguagem escolhida foi o Kotlin, uma linguagem altamente produtiva, e de uma sintaxe muito boa.
 - O design de arquitetura adotado foi o Clean Architecture para permitir uma melhor separação das responsabilidades das classes no projeto.
 - Um Service apenas com um método público chamado _execute_ para rodar todo o pipe de validações da senha, e cada validação com seus métodos privados (padrão Transaction Script).
 
