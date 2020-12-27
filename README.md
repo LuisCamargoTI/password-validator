@@ -27,4 +27,4 @@ LCS (Luis Camargo de Sousa) email luiscamargoti@gmail.com
 
 Último build
 
-![tests](https://uploaddeimagens.com.br/images/003/014/701/full/Screenshot_from_2020-12-27_16-54-27.png?1609098956)
+![tests](https://uploaddeimagens.com.br/images/003/014/706/original/Screenshot_from_2020-12-27_16-59-02.png?1609099155)
