@@ -1,5 +1,5 @@
 # password-validator
-An password validator API
+A password validator API
 
 ##### Pré-requisitos
 - _docker_ para executar a aplicação https://linuxize.com/post/how-to-install-and-use-docker-on-ubuntu-18-04/
