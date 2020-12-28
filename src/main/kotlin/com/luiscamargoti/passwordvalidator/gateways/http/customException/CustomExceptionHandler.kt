@@ -1,7 +1,7 @@
-package com.luiscamargoti.passwordvalidator.http.customException
+package com.luiscamargoti.passwordvalidator.gateways.http.customException
 
 import com.luiscamargoti.passwordvalidator.domain.exceptions.ValidatePasswordException
-import com.luiscamargoti.passwordvalidator.http.json.ErrorResponse
+import com.luiscamargoti.passwordvalidator.gateways.http.json.ErrorResponse
 import org.springframework.http.HttpStatus
 import org.springframework.web.bind.annotation.ControllerAdvice
 import org.springframework.web.bind.annotation.ExceptionHandler

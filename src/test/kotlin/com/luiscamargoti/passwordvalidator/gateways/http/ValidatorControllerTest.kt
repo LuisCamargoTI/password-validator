@@ -1,4 +1,4 @@
-package com.luiscamargoti.passwordvalidator.http
+package com.luiscamargoti.passwordvalidator.gateways.http
 
 import com.fasterxml.jackson.databind.DeserializationFeature
 import com.fasterxml.jackson.databind.ObjectMapper

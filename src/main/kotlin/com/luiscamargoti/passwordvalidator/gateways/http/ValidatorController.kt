@@ -1,4 +1,4 @@
-package com.luiscamargoti.passwordvalidator.http
+package com.luiscamargoti.passwordvalidator.gateways.http
 
 import com.luiscamargoti.passwordvalidator.domain.exceptions.ValidatePasswordException
 import com.luiscamargoti.passwordvalidator.usecases.ValidatePassword
